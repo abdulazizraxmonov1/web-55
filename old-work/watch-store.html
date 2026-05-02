@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mohid Watch Store</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: "#3858d6",
+            dark: "#0b0b0f",
+            ink: "#1f2937",
+            soft: "#f5f7fb",
+            line: "#e5e7eb",
+            muted: "#6b7280"
+          },
+          fontFamily: {
+            sans: ["Manrope", "sans-serif"],
+            display: ["Space Grotesk", "sans-serif"]
+          },
+          boxShadow: {
+            card: "0 22px 45px rgba(16, 24, 40, 0.08)",
+            glow: "0 32px 80px rgba(56, 88, 214, 0.16)"
+          }
+        }
+      }
+    };
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white font-sans text-ink">
+  <div class="overflow-x-hidden">
+    <section class="bg-[radial-gradient(circle_at_top_right,_rgba(56,88,214,0.28),_transparent_26%),linear-gradient(135deg,#0a0a0c_0%,#15171d_55%,#0b0b0f_100%)] text-white">
+      <div class="mx-auto max-w-6xl px-4 pb-16 pt-6 sm:px-6 lg:px-8">
+        <header class="flex flex-wrap items-center justify-between gap-4">
+          <a href="#" class="flex items-center gap-3">
+            <span class="grid h-11 w-11 place-items-center rounded-full bg-white/10 ring-1 ring-white/15">
+              <span class="font-display text-lg font-bold">M</span>
+            </span>
+            <div>
+              <p class="font-display text-lg font-bold tracking-wide">Mohid</p>
+              <p class="text-xs text-white/60">Premium watch collection</p>
+            </div>
+          </a>
+
+          <nav class="hidden items-center gap-8 text-sm font-medium text-white/75 md:flex">
+            <a class="transition hover:text-white" href="#">Home</a>
+            <a class="transition hover:text-white" href="#">Brands</a>
+            <a class="transition hover:text-white" href="#">Recent Products</a>
+            <a class="transition hover:text-white" href="#">Reviews</a>
+            <a class="transition hover:text-white" href="#">Contact</a>
+          </nav>
+
+          <div class="flex items-center gap-3 text-sm">
+            <button class="rounded-full border border-white/15 px-4 py-2 text-white/80 transition hover:border-white/30 hover:text-white">Login</button>
+            <button class="rounded-full bg-primary px-4 py-2 font-semibold text-white shadow-glow transition hover:bg-blue-500">Shop Now</button>
+          </div>
+        </header>
+
+        <div class="grid items-center gap-12 pt-14 lg:grid-cols-[1.05fr_0.95fr] lg:pt-20">
+          <div class="max-w-xl">
+            <p class="mb-4 inline-flex items-center rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs font-semibold uppercase tracking-[0.32em] text-white/70">
+              Smart watch store
+            </p>
+            <h1 class="font-display text-4xl font-bold leading-tight sm:text-5xl lg:text-6xl">
+              Discover Most Suitable Watches
+            </h1>
+            <p class="mt-5 max-w-lg text-base leading-8 text-white/70 sm:text-lg">
+              Find the best wearable for your style, workouts, and daily routine. Sleek design, premium comfort, and the right features in one place.
+            </p>
+
+            <form class="mt-8 flex flex-col gap-3 rounded-3xl border border-white/10 bg-white/95 p-3 shadow-card sm:flex-row">
+              <div class="flex flex-1 items-center gap-3 rounded-2xl bg-slate-50 px-4 py-3 text-slate-500">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 flex-none" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.7">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-4.35-4.35m1.85-5.15a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z" />
+                </svg>
+                <input class="w-full bg-transparent text-sm text-slate-700 outline-none placeholder:text-slate-400" type="text" placeholder="Find the best brand, model or feature">
+              </div>
+              <button type="submit" class="rounded-2xl bg-primary px-6 py-3 text-sm font-semibold text-white transition hover:bg-blue-500">
+                Search
+              </button>
+            </form>
+          </div>
+
+          <div class="relative mx-auto w-full max-w-xl">
+            <div class="absolute -left-2 top-10 h-32 w-32 rounded-full bg-primary/30 blur-3xl"></div>
+            <div class="absolute bottom-8 right-6 h-28 w-28 rounded-full bg-amber-300/20 blur-3xl"></div>
+            <div class="relative">
+              <div class="absolute inset-x-12 bottom-4 h-10 rounded-full bg-black/40 blur-2xl"></div>
+              <img src="c1733564954d5b292e79760fad8010e2230a8f58.png" alt="Featured smart watch" class="relative z-10 mx-auto w-full max-w-md drop-shadow-[0_28px_42px_rgba(0,0,0,0.45)]">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <main>
+      <section class="mx-auto -mt-8 max-w-6xl px-4 sm:px-6 lg:px-8">
+        <div class="grid gap-5 md:grid-cols-3">
+          <article class="flex items-center gap-4 rounded-[28px] bg-soft p-5 shadow-card">
+            <div class="flex h-20 w-20 items-center justify-center rounded-3xl bg-white">
+              <img src="282dc6c9c290b2ee35cb6d74142b46d17145c567.png" alt="Apple watch" class="h-16 object-contain">
+            </div>
+            <div>
+              <h3 class="font-display text-lg font-bold text-slate-900">Apple</h3>
+              <p class="mt-1 text-sm leading-6 text-muted">Smart and stylish watches with modern display and premium feel.</p>
+            </div>
+          </article>
+
+          <article class="flex items-center gap-4 rounded-[28px] bg-soft p-5 shadow-card">
+            <div class="flex h-20 w-20 items-center justify-center rounded-3xl bg-white">
+              <img src="2db47655bf4e215772e65b5d693c357244543f7d.png" alt="Xiaomi watch" class="h-16 object-contain">
+            </div>
+            <div>
+              <h3 class="font-display text-lg font-bold text-slate-900">Xiaomi</h3>
+              <p class="mt-1 text-sm leading-6 text-muted">Balanced fitness tracking, long battery life, and clean design.</p>
+            </div>
+          </article>
+
+          <article class="flex items-center gap-4 rounded-[28px] bg-soft p-5 shadow-card">
+            <div class="flex h-20 w-20 items-center justify-center rounded-3xl bg-white">
+              <img src="5ebac6090bf3348c1c70790c949c512789735cea.png" alt="Fitbit watch" class="h-16 object-contain">
+            </div>
+            <div>
+              <h3 class="font-display text-lg font-bold text-slate-900">FitBit</h3>
+              <p class="mt-1 text-sm leading-6 text-muted">Health-focused wearables that keep your goals visible every day.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="mx-auto max-w-6xl px-4 pb-8 pt-20 text-center sm:px-6 lg:px-8">
+        <p class="text-sm font-semibold uppercase tracking-[0.28em] text-primary">Find your favourite smart watch.</p>
+        <h2 class="mt-3 font-display text-3xl font-bold text-slate-900 sm:text-4xl">Our Latest Products</h2>
+
+        <div class="mt-12 grid gap-6 sm:grid-cols-2 xl:grid-cols-3">
+          <article class="group rounded-[30px] border border-slate-100 bg-white p-6 text-left shadow-card transition duration-300 hover:-translate-y-1 hover:shadow-glow">
+            <div class="relative rounded-[24px] bg-slate-50 p-6">
+              <span class="absolute left-4 top-4 rounded-full bg-primary px-3 py-1 text-xs font-semibold text-white">New</span>
+              <img src="282dc6c9c290b2ee35cb6d74142b46d17145c567.png" alt="Apple Smart I" class="mx-auto h-52 object-contain transition duration-300 group-hover:scale-105">
+            </div>
+            <div class="pt-6 text-center">
+              <h3 class="font-display text-lg font-bold text-slate-900">Apple Smart I</h3>
+              <p class="mt-2 text-amber-400">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+              <p class="mt-2 text-sm text-muted"><span class="mr-2 line-through">$300.00</span><span class="text-lg font-bold text-slate-900">$255.00</span></p>
+            </div>
+          </article>
+
+          <article class="group rounded-[30px] border border-slate-100 bg-white p-6 text-left shadow-card transition duration-300 hover:-translate-y-1 hover:shadow-glow">
+            <div class="rounded-[24px] bg-slate-50 p-6">
+              <img src="c7d8e7abfdcc40c742f225a7c9613858c77aa5f3.png" alt="Apple Smart II" class="mx-auto h-52 object-contain transition duration-300 group-hover:scale-105">
+            </div>
+            <div class="pt-6 text-center">
+              <h3 class="font-display text-lg font-bold text-slate-900">Apple Smart II</h3>
+              <p class="mt-2 text-amber-400">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+              <p class="mt-2 text-sm text-muted"><span class="mr-2 line-through">$300.00</span><span class="text-lg font-bold text-slate-900">$255.00</span></p>
+            </div>
+          </article>
+
+          <article class="group rounded-[30px] border border-slate-100 bg-white p-6 text-left shadow-card transition duration-300 hover:-translate-y-1 hover:shadow-glow">
+            <div class="rounded-[24px] bg-slate-50 p-6">
+              <img src="074fb404d35df961b700e57b34ebd04b1002b6d4.png" alt="Apple Smart III" class="mx-auto h-52 object-contain transition duration-300 group-hover:scale-105">
+            </div>
+            <div class="pt-6 text-center">
+              <h3 class="font-display text-lg font-bold text-slate-900">Apple Smart III</h3>
+              <p class="mt-2 text-amber-400">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+              <p class="mt-2 text-sm text-muted"><span class="mr-2 line-through">$300.00</span><span class="text-lg font-bold text-slate-900">$255.00</span></p>
+            </div>
+          </article>
+
+          <article class="group rounded-[30px] border border-slate-100 bg-white p-6 text-left shadow-card transition duration-300 hover:-translate-y-1 hover:shadow-glow">
+            <div class="rounded-[24px] bg-slate-50 p-6">
+              <img src="2c021c1e3dee4b5e646f4df4aa7c6463b8539659.png" alt="Apple Smart IV" class="mx-auto h-52 object-contain transition duration-300 group-hover:scale-105">
+            </div>
+            <div class="pt-6 text-center">
+              <h3 class="font-display text-lg font-bold text-slate-900">Apple Smart IV</h3>
+              <p class="mt-2 text-amber-400">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+              <p class="mt-2 text-sm text-muted"><span class="mr-2 line-through">$450.00</span><span class="text-lg font-bold text-slate-900">$399.00</span></p>
+            </div>
+          </article>
+
+          <article class="group rounded-[30px] border border-slate-100 bg-white p-6 text-left shadow-card transition duration-300 hover:-translate-y-1 hover:shadow-glow">
+            <div class="rounded-[24px] bg-slate-50 p-6">
+              <img src="e08624e48899e1f9c17fbb33cee62ca5c5f20b52 (1).png" alt="Samsung Watch Pro" class="mx-auto h-52 object-contain transition duration-300 group-hover:scale-105">
+            </div>
+            <div class="pt-6 text-center">
+              <h3 class="font-display text-lg font-bold text-slate-900">Samsung Watch Pro</h3>
+              <p class="mt-2 text-amber-400">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+              <p class="mt-2 text-sm text-muted"><span class="mr-2 line-through">$300.00</span><span class="text-lg font-bold text-slate-900">$255.00</span></p>
+            </div>
+          </article>
+
+          <article class="group rounded-[30px] border border-slate-100 bg-white p-6 text-left shadow-card transition duration-300 hover:-translate-y-1 hover:shadow-glow">
+            <div class="rounded-[24px] bg-slate-50 p-6">
+              <img src="e01013cd0bd369c22f4b03a2c72db3ff166cb93e.png" alt="Fitbit Max I" class="mx-auto h-52 object-contain transition duration-300 group-hover:scale-105">
+            </div>
+            <div class="pt-6 text-center">
+              <h3 class="font-display text-lg font-bold text-slate-900">FitBit Max I</h3>
+              <p class="mt-2 text-amber-400">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+              <p class="mt-2 text-sm text-muted"><span class="mr-2 line-through">$300.00</span><span class="text-lg font-bold text-slate-900">$155.00</span></p>
+            </div>
+          </article>
+        </div>
+
+        <button class="mt-10 rounded-full bg-primary px-8 py-3 text-sm font-semibold text-white shadow-glow transition hover:bg-blue-500">
+          View More
+        </button>
+      </section>
+
+      <section class="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:px-8">
+        <p class="text-center text-sm font-semibold uppercase tracking-[0.28em] text-primary">Here are our some of the best clients.</p>
+        <h2 class="mt-3 text-center font-display text-3xl font-bold text-slate-900 sm:text-4xl">What People Say About Us</h2>
+
+        <div class="mt-12 grid gap-6 lg:grid-cols-2">
+          <article class="rounded-[32px] bg-soft p-6 shadow-card sm:flex sm:items-center sm:gap-5">
+            <div class="mx-auto grid h-24 w-24 place-items-center rounded-[28px] bg-[linear-gradient(135deg,#dbeafe,#bfdbfe_45%,#93c5fd)] text-2xl font-bold text-primary sm:mx-0 sm:flex-none">
+              HM
+            </div>
+            <div class="mt-5 text-center sm:mt-0 sm:text-left">
+              <h3 class="font-display text-xl font-bold text-slate-900">Hamza Falud</h3>
+              <p class="mt-3 text-sm leading-7 text-muted">
+                The product quality is excellent and the design feels premium in hand. Delivery was quick and the watch matched exactly what I expected.
+              </p>
+              <p class="mt-3 text-amber-400">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+            </div>
+          </article>
+
+          <article class="rounded-[32px] bg-soft p-6 shadow-card sm:flex sm:items-center sm:gap-5">
+            <div class="mx-auto grid h-24 w-24 place-items-center rounded-[28px] bg-[linear-gradient(135deg,#f5d0fe,#e9d5ff_45%,#c4b5fd)] text-2xl font-bold text-violet-700 sm:mx-0 sm:flex-none">
+              HF
+            </div>
+            <div class="mt-5 text-center sm:mt-0 sm:text-left">
+              <h3 class="font-display text-xl font-bold text-slate-900">Hafiz Fawadta</h3>
+              <p class="mt-3 text-sm leading-7 text-muted">
+                Very comfortable to wear, and the display looks sharp even outdoors. I also liked how easy it was to compare models on the website.
+              </p>
+              <p class="mt-3 text-amber-400">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="mt-8 flex items-center justify-center gap-2">
+          <span class="h-2.5 w-2.5 rounded-full bg-slate-300"></span>
+          <span class="h-2.5 w-2.5 rounded-full bg-slate-300"></span>
+          <span class="h-2.5 w-2.5 rounded-full bg-primary"></span>
+        </div>
+      </section>
+
+      <section class="mx-auto max-w-6xl px-4 pb-20 sm:px-6 lg:px-8">
+        <div class="overflow-hidden rounded-[36px] bg-soft shadow-card">
+          <div class="grid items-center gap-8 px-6 py-10 sm:px-10 lg:grid-cols-[1.1fr_0.9fr] lg:px-14">
+            <div class="max-w-xl">
+              <p class="text-sm font-semibold uppercase tracking-[0.28em] text-primary">Stay updated</p>
+              <h2 class="mt-3 font-display text-3xl font-bold text-slate-900 sm:text-4xl">Subscribe To Newsletter</h2>
+              <p class="mt-4 text-base leading-7 text-muted">
+                Get new arrivals, product updates, and exclusive offers directly to your inbox.
+              </p>
+
+              <form class="mt-7 flex flex-col gap-3 sm:flex-row">
+                <input type="email" placeholder="Enter your email" class="h-14 flex-1 rounded-2xl border border-slate-200 bg-white px-5 text-sm text-slate-700 outline-none transition focus:border-primary">
+                <button type="submit" class="h-14 rounded-2xl bg-primary px-7 text-sm font-semibold text-white shadow-glow transition hover:bg-blue-500">
+                  Subscribe
+                </button>
+              </form>
+            </div>
+
+            <div class="relative mx-auto w-full max-w-sm">
+              <div class="absolute inset-x-12 bottom-2 h-10 rounded-full bg-black/10 blur-2xl"></div>
+              <img src="504129fd61477c584f1862e18c7df1d430fb90ff (2).png" alt="Newsletter watch" class="relative z-10 mx-auto w-full max-w-[250px] object-contain">
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-dark py-7 text-center text-sm text-white/70">
+      <p>Copyright @ 2026 | Mohid</p>
+    </footer>
+  </div>
+</body>
+</html>
+ 
+
+ 
